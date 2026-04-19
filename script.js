@@ -292,6 +292,27 @@ function initScrollProgress() {
   }, { passive: true });
 }
 
+/* ── 15. Secure email obfuscation ── */
+function initSecureEmails() {
+  const emailLinks = document.querySelectorAll('.secure-email');
+  emailLinks.forEach(link => {
+    const user = link.getAttribute('data-contact');
+    const domain = link.getAttribute('data-domain');
+    if (!user || !domain) return;
+    
+    const realEmail = user + '@' + domain;
+    
+    // Fill the visual text
+    const textSpan = link.querySelector('.email-text');
+    if (textSpan) textSpan.textContent = realEmail;
+
+    // Set href only on interaction (avoids static scrapers)
+    const setHref = () => link.setAttribute('href', 'mailto:' + realEmail);
+    link.addEventListener('mouseenter', setHref, { once: true });
+    link.addEventListener('touchstart', setHref, { once: true });
+  });
+}
+
 /* ══════════════════════════════
    INIT
 ══════════════════════════════ */
@@ -309,4 +330,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initCursorDot();
   initTimelineStagger();
   initScrollProgress();
+  initSecureEmails();
 });

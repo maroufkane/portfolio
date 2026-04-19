@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:;" />
   <title>Marouf Kane – Apprenti Ingénieur en IAA</title>
   <meta name="description"
     content="E-portfolio de Marouf Kane, apprenti ingénieur en Ingénierie des Produits & des Procédés agroalimentaires, AgroParisTech / Université Paris-Saclay." />
@@ -28,7 +29,7 @@
         <li><a href="#education">Formation</a></li>
         <li><a href="#engagement">Engagement</a></li>
       </ul>
-      <a href="mailto:maroufkane@gmail.com" class="btn-contact">Me contacter</a>
+      <a href="#" class="btn-contact secure-email" data-contact="maroufkane" data-domain="gmail.com">Me contacter</a>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -50,12 +51,12 @@
       </p>
       <div class="hero-cta reveal">
         <a href="#experience" class="btn-primary">Voir mon parcours</a>
-        <a href="mailto:maroufkane@gmail.com" class="btn-outline">
+        <a href="#" class="btn-outline secure-email" data-contact="maroufkane" data-domain="gmail.com">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
             <polyline points="22,6 12,12 2,6" />
           </svg>
-          maroufkane@gmail.com
+          <span class="email-text">Contact</span>
         </a>
       </div>
       <div class="hero-meta reveal">
@@ -462,7 +463,7 @@
       <div class="footer-cta reveal">
         <h2>Travaillons ensemble</h2>
         <p>Disponible pour une alternance dès la rentrée 2026 en M2 Ingénierie des Produits &amp; Procédés.</p>
-        <a href="mailto:maroufkane@gmail.com" class="btn-primary">maroufkane@gmail.com</a>
+        <a href="#" class="btn-primary secure-email" data-contact="maroufkane" data-domain="gmail.com"><span class="email-text">Contacter l'auteur</span></a>
       </div>
       <div class="footer-links reveal">
         <a href="tel:+33625056840">+33 6 25 05 68 40</a>
