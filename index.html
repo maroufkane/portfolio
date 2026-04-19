@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marouf Kane – Apprenti Ingénieur en IAA</title>
+  <meta name="description"
+    content="E-portfolio de Marouf Kane, apprenti ingénieur en Ingénierie des Produits & des Procédés agroalimentaires, AgroParisTech / Université Paris-Saclay." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">MK</a>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#experience">Expériences</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#education">Formation</a></li>
+        <li><a href="#engagement">Engagement</a></li>
+      </ul>
+      <a href="mailto:maroufkane@gmail.com" class="btn-contact">Me contacter</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge reveal">Disponible pour alternance · Rentrée 2026</div>
+      <h1 class="hero-title reveal">
+        <span class="line">Marouf</span>
+        <span class="line accent">Kane</span>
+      </h1>
+      <p class="hero-subtitle reveal">
+        Apprenti Ingénieur · Ingénierie des Produits &amp; des Procédés
+        <br />AgroParisTech · Université Paris-Saclay
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#experience" class="btn-primary">Voir mon parcours</a>
+        <a href="mailto:maroufkane@gmail.com" class="btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,12 2,6" />
+          </svg>
+          maroufkane@gmail.com
+        </a>
+      </div>
+      <div class="hero-meta reveal">
+        <span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          Orsay, 91400
+        </span>
+        <span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.06 6.06l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92V16.92z" />
+          </svg>
+          +33 6 25 05 68 40
+        </span>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── About ── -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Profil</span>
+        <h2>À propos de moi</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Passionné par la <strong>transformation des produits alimentaires</strong> et le <strong>génie des
+              procédés</strong>, je poursuis un Master en Nutrition et Sciences des Aliments à AgroParisTech avant
+            d'intégrer le M2 Ingénierie des Produits & des Procédés en alternance.
+          </p>
+          <p>
+            Mon parcours couvre la R&D en nutraceutiques, l'optimisation de lignes de production industrielles et la
+            gestion HSE, avec des expériences en France et au Sénégal.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Experience ── -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Parcours</span>
+        <h2>Expériences professionnelles</h2>
+      </div>
+      <div class="timeline">
+
+        <!-- Circul'Egg -->
+        <div class="timeline-item reveal" data-index="0">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3>Stagiaire R&amp;D Produits</h3>
+                <p class="card-company">Circul'Egg</p>
+                <div class="card-meta-inline">
+                  <span class="card-date">Janv. – Mars 2026</span>
+                  <span class="card-location">Paris &amp; Janzé (35)</span>
+                </div>
+              </div>
+              <div class="card-logo">
+                <img src="logos/circul'egg/circulegg.png" alt="Logo Circul'Egg" loading="lazy" />
+              </div>
+            </div>
+            <ul class="card-list">
+              <li>Revue de littérature des effets de la membrane d'œuf (ESM) sur la santé cutanée et articulaire</li>
+              <li>Évaluation de l'ESM aviaire comme plateforme bioactive pour des nutraceutiques innovants</li>
+              <li>Collaboration en R&amp;D : intégration de l'ESM dans des matrices alimentaires variées</li>
+            </ul>
+            <div class="card-tags">
+              <span class="tag">R&D</span>
+              <span class="tag">Nutraceutiques</span>
+              <span class="tag">Recherche documentaire</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grands Moulins -->
+        <div class="timeline-item reveal" data-index="1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3>Stagiaire Ingénierie de Production</h3>
+                <p class="card-company">Les Grands Moulins de Dakar</p>
+                <div class="card-meta-inline">
+                  <span class="card-date">Août – Oct. 2024</span>
+                  <span class="card-location">Dakar, Sénégal</span>
+                </div>
+              </div>
+              <div class="card-logo">
+                <img src="logos/Grands moulins de Dakar/grands moulins de dakar.jpg" alt="Logo Grands Moulins de Dakar"
+                  loading="lazy" />
+              </div>
+            </div>
+            <ul class="card-list">
+              <li>Pilotage et optimisation d'une ligne automatisée de production de granulés (nutrition animale)</li>
+              <li>Analyse des écarts de rendement et proposition d'ajustements opérationnels</li>
+              <li>Rédaction d'un mémoire technique sur les procédés industriels de fabrication de granulés</li>
+            </ul>
+            <div class="card-tags">
+              <span class="tag">Génie des Procédés</span>
+              <span class="tag">Optimisation</span>
+              <span class="tag">Production</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ICS -->
+        <div class="timeline-item reveal" data-index="2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3>Stagiaire HSE</h3>
+                <p class="card-company">Industries Chimiques du Sénégal</p>
+                <div class="card-meta-inline">
+                  <span class="card-date">Oct. – Nov. 2023</span>
+                  <span class="card-location">Dakar, Sénégal</span>
+                </div>
+              </div>
+              <div class="card-logo">
+                <img src="logos/Industries chimiques du senegal/Industries chimiques du sénégal.png" alt="Logo ICS"
+                  loading="lazy" />
+              </div>
+            </div>
+            <ul class="card-list">
+              <li>Évaluation des risques et élaboration de procédures de sécurité en atelier industriel</li>
+              <li>Sensibilisation du personnel aux risques professionnels</li>
+            </ul>
+            <div class="card-tags">
+              <span class="tag">HSE</span>
+              <span class="tag">Sécurité industrielle</span>
+              <span class="tag">Gestion des risques</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Patisen -->
+        <div class="timeline-item reveal" data-index="3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3>Stagiaire R&amp;D &amp; Contrôle Qualité</h3>
+                <p class="card-company">Patisen</p>
+                <div class="card-meta-inline">
+                  <span class="card-date">Sept. – Oct. 2022</span>
+                  <span class="card-location">Dakar, Sénégal</span>
+                </div>
+              </div>
+              <div class="card-logo">
+                <img src="logos/Patisen/PATISEN-Candidature-Spontanée-Demande-de-Stage-ou-emploi.png" alt="Logo Patisen"
+                  loading="lazy" />
+              </div>
+            </div>
+            <ul class="card-list">
+              <li>Amélioration de formulations par ajustement d'ingrédients et tests en pilote industriel</li>
+              <li>Contrôle de conformité des produits finis par analyses physico-chimiques systématiques</li>
+              <li>Évaluation des propriétés organoleptiques des prototypes lors de tests comparatifs</li>
+            </ul>
+            <div class="card-tags">
+              <span class="tag">Formulation</span>
+              <span class="tag">Contrôle qualité</span>
+              <span class="tag">Analyses sensorielles</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ── -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Expertise</span>
+        <h2>Compétences</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-group reveal">
+          <div class="skill-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </div>
+          <h3>Sciences alimentaires</h3>
+          <ul>
+            <li>Formulation &amp; réactivité biochimique</li>
+            <li>Structuration des aliments</li>
+            <li>Analyses physico-chimiques</li>
+            <li>Analyses organoleptiques</li>
+            <li>Microbiologie alimentaire</li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="3" />
+              <path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14" />
+              <path
+                d="M22.54 6.11C23.47 8.05 24 10.22 24 12.5c0 2.28-.53 4.45-1.46 6.39M1.46 6.11C.53 8.05 0 10.22 0 12.5c0 2.28.53 4.45 1.46 6.39" />
+            </svg>
+          </div>
+          <h3>Génie des procédés</h3>
+          <ul>
+            <li>Opérations unitaires</li>
+            <li>Optimisation de lignes de production</li>
+            <li>Supervision de process industriels</li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 11l3 3L22 4" />
+              <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
+            </svg>
+          </div>
+          <h3>Qualité &amp; Réglementation</h3>
+          <ul>
+            <li>HACCP / ISO 22000</li>
+            <li>Contrôle qualité en ligne</li>
+            <li>Audits de conformité</li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+          </div>
+          <h3>Outils numériques</h3>
+          <ul>
+            <li>Python &amp; R</li>
+            <li>Suite Microsoft Office</li>
+            <li>QGIS / ArcGIS</li>
+            <li>Asana, Jira</li>
+            <li>Zotero</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Languages -->
+      <div class="languages-row reveal">
+        <h3 class="lang-title">Langues</h3>
+        <div class="languages">
+          <div class="lang-item">
+            <span class="lang-flag">🇫🇷</span>
+            <span class="lang-name">Français</span>
+            <span class="lang-level">Langue maternelle</span>
+            <div class="lang-bar">
+              <div class="lang-fill" style="--w:100%"></div>
+            </div>
+          </div>
+          <div class="lang-item">
+            <span class="lang-flag">🇬🇧</span>
+            <span class="lang-name">Anglais</span>
+            <span class="lang-level">C1 Avancé</span>
+            <div class="lang-bar">
+              <div class="lang-fill" style="--w:85%"></div>
+            </div>
+          </div>
+          <div class="lang-item">
+            <span class="lang-flag">🌍</span>
+            <span class="lang-name">Wolof</span>
+            <span class="lang-level">Courant</span>
+            <div class="lang-bar">
+              <div class="lang-fill" style="--w:90%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="certs-row reveal">
+        <h3 class="lang-title">Certifications</h3>
+        <div class="certs">
+          <div class="cert-card">
+            <span class="cert-icon">🏅</span>
+            <div>
+              <p class="cert-name">Gestion de projets</p>
+              <p class="cert-issuer">Coursera · 2024–2025</p>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="cert-icon">🏅</span>
+            <div>
+              <p class="cert-name">Python &amp; Statistiques</p>
+              <p class="cert-issuer">Udacity · 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Education ── -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Formation</span>
+        <h2>Parcours académique</h2>
+      </div>
+      <div class="edu-grid">
+
+        <div class="edu-card reveal">
+          <div class="edu-year">2025 – 2026</div>
+          <div class="edu-body">
+            <h3>Master 1 – Nutrition &amp; Sciences des Aliments</h3>
+            <p class="edu-institution">AgroParisTech · Université Paris-Saclay</p>
+            <p class="edu-note">Intégration M2 Ingénierie des Produits &amp; des Procédés en alternance · Rentrée 2026
+            </p>
+          </div>
+          <div class="edu-logo">
+            <img src="logos/Agroparistech/agroparistech.svg" alt="Logo AgroParisTech" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-year">2021 – 2024</div>
+          <div class="edu-body">
+            <h3>Licence – Sciences Agricoles, Alimentaires &amp; Nutritionnelles</h3>
+            <p class="edu-institution">Polytech Diamniadio · Université Amadou Mahtar Mbow, Dakar</p>
+          </div>
+          <div class="edu-logo">
+            <img src="logos/polytech diamniadio/Polytech.png" alt="Logo Polytech Diamniadio" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-year">2021</div>
+          <div class="edu-body">
+            <h3>Baccalauréat Sciences Expérimentales</h3>
+            <p class="edu-institution">Lycée Thiaroye, Dakar</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Engagement ── -->
+  <section id="engagement">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Leadership</span>
+        <h2>Engagement &amp; Leadership</h2>
+      </div>
+      <div class="engage-grid">
+
+        <div class="engage-card reveal">
+          <div class="engage-accent"></div>
+          <div class="engage-body">
+            <span class="engage-date">depuis Nov. 2025</span>
+            <h3>Ambassadeur EUGLOH</h3>
+            <p class="engage-org">Université Paris-Saclay</p>
+            <p>Promotion de l'alliance européenne EUGLOH et coordination d'événements étudiants inter-campus.</p>
+          </div>
+          <div class="engage-logo">
+            <img src="logos/eugloh/eugloh_logo.png" alt="Logo EUGLOH" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="engage-card reveal">
+          <div class="engage-accent"></div>
+          <div class="engage-body">
+            <span class="engage-date">depuis Oct. 2025</span>
+            <h3>Tuteur – Cordées de la Réussite</h3>
+            <p class="engage-org">AgroParisTech</p>
+            <p>Accompagnement d'élèves de seconde dans leur orientation vers les sciences du vivant.</p>
+          </div>
+          <div class="engage-logo">
+            <img src="logos/cordées de la réussite/cordées de la réussite.png" alt="Logo Cordées de la Réussite"
+              loading="lazy" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer / CTA ── -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-cta reveal">
+        <h2>Travaillons ensemble</h2>
+        <p>Disponible pour une alternance dès la rentrée 2026 en M2 Ingénierie des Produits &amp; Procédés.</p>
+        <a href="mailto:maroufkane@gmail.com" class="btn-primary">maroufkane@gmail.com</a>
+      </div>
+      <div class="footer-links reveal">
+        <a href="tel:+33625056840">+33 6 25 05 68 40</a>
+        <span class="sep">·</span>
+        <a href="https://www.linkedin.com/in/marouf-kane" target="_blank" rel="noopener"
+          style="display:inline-flex;align-items:center;gap:5px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+          LinkedIn
+        </a>
+        <span class="sep">·</span>
+        <span>Orsay, 91400</span>
+      </div>
+      <p class="footer-copy">© 2026 Marouf Kane · Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
