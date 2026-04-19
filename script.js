@@ -306,10 +306,11 @@ function initSecureEmails() {
     const textSpan = link.querySelector('.email-text');
     if (textSpan) textSpan.textContent = realEmail;
 
-    // Set href only on interaction (avoids static scrapers)
-    const setHref = () => link.setAttribute('href', 'mailto:' + realEmail);
-    link.addEventListener('mouseenter', setHref, { once: true });
-    link.addEventListener('touchstart', setHref, { once: true });
+    // Manage click directly for 100% mobile/desktop reliability
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.location.href = 'mailto:' + realEmail;
+    });
   });
 }
 
